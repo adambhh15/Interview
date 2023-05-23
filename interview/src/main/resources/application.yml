@@ -1,0 +1,30 @@
+server:
+  port: 8912
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      force: true
+      
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: 1234
+
+#swagger
+springdoc:
+ version: '@project.version@'
+ api-docs:
+    path: /api-docs
+ default-consumes-media-type: application/json
+ default-produces-media-type: application/json
+ swagger-ui:
+    operations-sorter: alpha
+    tags-sorter: alpha
+    path: /swagger-ui.html
+    disable-swagger-default-url: true
+    doc-expansion: none
+ paths-to-match:
+  - /api/** 
