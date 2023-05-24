@@ -5,6 +5,7 @@ server:
     encoding:
       charset: UTF-8
       force: true
+
       
 spring:
   datasource:
@@ -12,6 +13,10 @@ spring:
     url: jdbc:mysql://localhost:3306/mydb
     username: root
     password: 1234
+  mvc:
+    view:
+      prefix: /WEB-INF/interview/
+      suffix: .jsp
 
 #swagger
 springdoc:
