@@ -8,6 +8,9 @@ server:
 
       
 spring:
+  profiles:
+    include:
+    - oauth
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mydb
@@ -17,6 +20,7 @@ spring:
     view:
       prefix: /WEB-INF/interview/
       suffix: .jsp
+          
 
 #swagger
 springdoc:
@@ -33,3 +37,5 @@ springdoc:
     doc-expansion: none
  paths-to-match:
   - /api/** 
+  
+#security
