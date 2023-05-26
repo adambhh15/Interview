@@ -24,4 +24,10 @@ public class UserPageController {
 		mav.setViewName("insertUser");
 		return mav;
 	}
+	@GetMapping("/api/page/home")
+	public ModelAndView moveToHome(ModelAndView mav) {
+		System.out.println("userPage-Home 실행");
+		mav.setViewName("home");
+		return mav;
+	}
 }

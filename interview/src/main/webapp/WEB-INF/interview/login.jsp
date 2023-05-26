@@ -24,6 +24,7 @@
 					<a href="/api/page/insert">회원가입</a>
 				</div>
 			</form>
+			<a href="/oauth2/authorization/google">구글로 로그인</a>
 		</div>
 	</div>
 </body>
